@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.login-container {
+  background: transparent;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.login-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+body {
+  background-color: #282c34;
+}
+.form-group{
+  color: #ccc;
+}

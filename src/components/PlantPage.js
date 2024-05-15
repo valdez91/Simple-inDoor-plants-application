@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
+import Header from "./Header";
 
 function PlantPage() {
   const [plants, setPlants] = useState([]);
@@ -39,6 +40,7 @@ function PlantPage() {
 
   return (
     <main>
+      <Header />
       <NewPlantForm onAddPlant={handleAddPlant} />
       <Search onSearch={handleSearch} />
       <PlantList plants={filteredPlants} />
